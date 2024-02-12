@@ -1,26 +1,29 @@
+:root{
+    
+}
 
-.debug #site_header  {
+.debug #site_header {
     background-color: blue;
-    height: 5vh;
+    min-height: 7vh;
 }
 
-.debug #site_main  {
+.debug #site_main {
 
 }
 
 
-.debug .main_right{
+.debug .main_right {
     background-color: blueviolet;
-    max-height: 95vh;
     overflow-y: hidden;
+    max-height: 93vh;
+
 }
 
-.debug .main_left{
+.debug .main_left {
     background-color: pink;
-    height: 95vh;
 }
 
-.debug  .main_r_top{
+.debug .main_r_top {
 
     background-color: fuchsia;
 }
