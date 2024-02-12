@@ -1,13 +1,16 @@
-.debug #site_header .row{
 
+.debug #site_header  {
     background-color: blue;
-}
-
-.debug #site_main .main_left{
+    height: 5vh;
 
 }
 
-.debug #site_main .col-2{
+.debug .main_right{
+    height: 95vh;
+    background-color: blueviolet;
+}
+
+.debug .main_left{
     background-color: pink;
-    height: 480px;
+    height: 95vh;
 }
