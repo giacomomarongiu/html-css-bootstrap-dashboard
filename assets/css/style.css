@@ -1,4 +1,13 @@
 .debug #site_header .row{
-    height: 50px;
+
     background-color: blue;
+}
+
+.debug #site_main .main_left{
+
+}
+
+.debug #site_main .col-2{
+    background-color: pink;
+    height: 480px;
 }
