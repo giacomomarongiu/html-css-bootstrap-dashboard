@@ -3,16 +3,16 @@ body {
     overflow: hidden;
 }
 
-header {
+#site_header {
     height: 50px;
 }
 
 #site_header img{
-    max-height: 45px;
+    height: 50px;
 }
 
 main {
-    overflow: auto;
+ overflow-y: auto;
 }
 
 .wrapper {
@@ -23,6 +23,9 @@ main {
     min-width: 50px;
 }
 
+.img-code{
+    width: 100%;
+}
 
 
 @media screen and (min-width:992px) {

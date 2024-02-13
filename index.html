@@ -13,10 +13,23 @@
 
 <body class="">
 
+    <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="add_students"
+        aria-labelledby="staticBackdropLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="staticBackdropLabel">
+                Offcanvas
+            </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div>I will not close if you click outside of me.</div>
+        </div>
+    </div>
+
     <header>
-        <div id="site_header" class="container-fluid  p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light align-items-center">
-                <div class="col-2 text-center mh-100">
+        <div id="site_header" class="container-fluid h-100 p-0">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light align-items-center h-100 p-0">
+                <div class="col-2 text-center">
                     <div class="navbar-brand p-1">
                         <!-- logo for large screen -->
                         <img class="d-none d-md-block mw-100" src="./assets/img/logo.svg" />
@@ -43,7 +56,6 @@
 
 
     <div class="wrapper d-flex">
-
         <div class="sidebar col bg-dark flex">
             <ul class="list-unstyled text-white pt-4 d-flex flex-column align-items-center">
                 <li class="">
@@ -64,7 +76,7 @@
                         <span class="d-none d-lg-inline ps-1">Signal</span>
                     </a>
                 </li>
-                <li class="mt-auto">
+                <li class="">
                     <a class="text-white text-decoration-none">
                         <i class="fa-solid fa-gear"></i>
                         <span class="d-none d-lg-inline ps-1">Admin</span>
@@ -73,131 +85,112 @@
             </ul>
         </div>
 
-        <main>
-            <div id="site_main" class="container-fluid">
-                <div class="row">
-                    <div class=" bg-light">
+        <main class="">
 
-                        <div class="main_r_top h-25  bg-primary">
-                            <div class="container h-100 ">
-                                <div class="row h-100 text-white fw-bold pt-3 ">
-                                    <div class="col-12 col-md-4 col-lg-3 order-md-3">
-                                        <div class="d-flex align-items-center">
-                                            <span>Nuovo studente</span>
-                                            <button class="btn btn-primary btn-outline-light" type="button"> +</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-4 col-lg-6">
-                                        <h1 class="d-inline">Boolean</h1>
-                                        <span class="badge rounded-pill">Piano blaze</span>
-                                        <div>
-                                            <nav class="text-white" style="--bs-breadcrumb-divider: '>';"
-                                                aria-label="breadcrumb">
-                                                <ol class="breadcrumb">
-                                                    <li class="breadcrumb-item">
-                                                        <a href="#">
-                                                            <span class="badge">3 app</span>
-                                                        </a>
-                                                    </li>
-
-                                                    <li class="breadcrumb-item" aria-current="page">
-                                                        <a href="#">
-                                                            <span class="badge d-none d-lg-inline">Booleanmobile
-                                                                app</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="badge d-none d-lg-inline">Boolean web
-                                                                app</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="badge d-none d-lg-inline">Boolean blog
-                                                                app</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a href="#">
-                                                            <span class="badge d-lg-none">+</span>
-                                                        </a>
-                                                    </li>
-
-                                                </ol>
-                                            </nav>
-                                        </div>
-                                    </div>
-                                    <div class="col-12 col-md-4 col-lg-3">
-                                        <div class="online_students">
-                                            <!-- Button trigger modal -->
-                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
-                                                data-bs-target="#exampleModal">
-                                                Launch demo modal
-                                            </button>
-
-                                            <!-- Modal -->
-                                            <div class="modal fade" id="exampleModal" tabindex="-1"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                                <div class="modal-dialog modal-fullscreen-lg-down">
-                                                    <div class="modal-content">
-                                                        <div class="modal-header">
-                                                            <h5 class="modal-title" id="exampleModalLabel">Modal title
-                                                            </h5>
-                                                            <button type="button" class="btn-close"
-                                                                data-bs-dismiss="modal" aria-label="Close"></button>
-                                                        </div>
-                                                        <div class="modal-body">
-                                                            ...
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary"
-                                                                data-bs-dismiss="modal">Close</button>
-                                                            <button type="button" class="btn btn-primary">Save
-                                                                changes</button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+            <div id="site_main" class="p-0 container-fluid flex-grow-1 overflow-y-auto">
+                <div class="main_top bg-primary">
+                    <div class="container">
+                        <div class="row text-white fw-bold py-5">
+                            <div class="col-12 col-md-4 col-lg-3 order-md-3">
+                                <div class="d-flex align-items-center">
+                                    <span>Nuovo studente</span>
+                                    <div class="banner">
+                                        <button class="btn text-white border-outline-white" type="button"
+                                            data-bs-toggle="offcanvas" data-bs-target="#add_students"
+                                            aria-controls="add_students">
+                                            <i class="fa fa-plus" aria-hidden="true"></i>
+                                        </button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="col-12 col-md-4 col-lg-6">
+                                <h1 class="d-inline">Boolean</h1>
+                                <span class="badge rounded-pill">Piano blaze</span>
+                                <div>
+                                    <nav class="text-white" style="--bs-breadcrumb-divider: '>';"
+                                        aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="#">
+                                                    <span class="badge">3 app</span>
+                                                </a>
+                                            </li>
 
-                        <div class="main_r_bottom">
-                            <div class="row">
-                                <div class="col-12 col-lg-8">
-                                    <div class="card">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing
-                                        elit. Maxime debitis sapiente sint, voluptate nulla a accusantium tenetur
-                                        voluptas voluptatum tempora ratione sed eveniet eum at perferendis veniam
-                                        cumque cupiditate veritatis, esse quis! Neque magnam id, voluptate
-                                        perspiciatis soluta maitecto. dolor sit amet consectetur adipisicing elit.
-                                        Mollitia aliquam natus debitis fugit, ad autem sapiente nemo ipsa similique
-                                        iste excepturi ab enim voluptatum. Harum, dolore quas! Nemo amet porro
-                                        dolorem harum corporis, dicta vel saepe quae doloribus iusto! Placeat modi
-                                        nisi illum assumenda quis a reprehenderit eum deserunt incidunt?</div>
-                                    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Mollitia aliquam natus debitis fugit, ad autem sapiente nemo ipsa similique
-                                        iste excepturi ab enim voluptatum. Harum, dolore quas! Nemo amet porro
-                                        dolorem harum corporis, dicta vel saepe quae doloribus iusto! Placeat modi
-                                        nisi illum assumenda quis a reprehenderit eum deserunt incidunt?</div>
-                                </div>
-                                <div class="col-12 col-lg-4">
-                                    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Mollitia aliquam natus debitis fugit, ad autem sapiente nemo ipsa similique
-                                        iste excepturi ab enim voluptatum. Harum, dolore quas! Nemo amet porro
-                                        dolorem harum corporis, dicta vel saepe quae doloribus iusto! Placeat modi
-                                        nisi illum assumenda quis a reprehenderit eum deserunt incidunt?</div>
+                                            <li class="breadcrumb-item" aria-current="page">
+                                                <a href="#">
+                                                    <span class="badge d-none d-lg-inline">Booleanmobile
+                                                        app</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="badge d-none d-lg-inline">Boolean web
+                                                        app</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="badge d-none d-lg-inline">Boolean blog
+                                                        app</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#">
+                                                    <span class="badge d-lg-none">+</span>
+                                                </a>
+                                            </li>
 
-                                    <div class="card">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                        Incidunt excepturi, omnis cum voluptate nemo unde obcaecati blanditiis
-                                        ducimus dolor vero debitis libero, necessitatibus asperiores! Itaque
-                                        veritatis aspernatur ipsum natus repudiandae.</div>
+                                        </ol>
+                                    </nav>
                                 </div>
                             </div>
+                            <div class="col-12 col-md-4 col-lg-3">
+                                <h6>Studenti online negli ultimi 30 minuti</h6>
+                                <h5>125</h5>
+                            </div>
                         </div>
+                    </div>
+                </div>
 
+                <div class="main_bottom">
+                    <div class="row">
+                        <div class="col-12 col-lg-8">
+                            <div class="card">
+                                <h5 class="card-header">Prossime classi</h5>
+                                <div class="card-body">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" class="col-6 col-md-4">Nome</th>
+                                                <th scope="col" class="text-center d-none d-md-table-cell col-md-2">Data
+                                                    inizio</th>
+                                                <th scope="col" class="text-center d-none d-md-table-cell col-md-2">ROI
+                                                </th>
+                                                <th scope="col" class="text-center col-3 col-md-2">Stato</th>
+                                                <th scope="col" class="text-center col-3 col-md-2">Azioni</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">
+                                                    <span>Classe 75</span>
+                                                </th>
+                                                <td class="text-center d-none d-md-table-cell">15 Feb 2021</td>
+                                                <td class="text-center d-none d-md-table-cell">20%</td>
+                                                <td class="text-center">Otto</td>
+                                                <td class="text-center">@mdo</td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="card"></div>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                            <div class="card"></div>
+                            <div class="card"></div>
+                        </div>
                     </div>
                 </div>
             </div>
