@@ -16,15 +16,15 @@ body {
 
 
 .wrapper {
-    height: calc(100%-50px);
+    height: calc(100% - 50px);
 }
 
 .sidebar {
     max-width: 70px;
 }
 
-main{
-    overflow-y: scroll;
+body #site_main{
+overflow-y: auto;
 }
 
 .img_20px{
