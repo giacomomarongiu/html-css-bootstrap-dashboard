@@ -1,6 +1,8 @@
+
+
 body {
     height: 100vh;
-    overflow: hidden;
+    overflow: ;
 }
 
 #site_header {
@@ -12,7 +14,7 @@ body {
 }
 
 main {
- overflow-y: auto;
+
 }
 
 .wrapper {
