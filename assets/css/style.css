@@ -21,10 +21,20 @@ main {
 
 .sidebar {
     min-width: 50px;
+    max-width: 120px;
 }
 
-.img-code{
-    width: 100%;
+.img_20px{
+    max-width: 30px;
+}
+
+.action_btn{
+    all: unset;
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    color: gray;
+    border: 1px solid gray;
 }
 
 
