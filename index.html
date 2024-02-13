@@ -85,10 +85,10 @@
             </ul>
         </div>
 
-        <main class="">
+        <main class="col">
 
-            <div id="site_main" class="p-0 container-fluid flex-grow-1 overflow-y-auto">
-                <div class="main_top bg-primary">
+            <div id="site_main" class="p-0 container-fluid  overflow-y-auto">
+                <div class="main_top bg-primary w-100">
                     <div class="container">
                         <div class="row text-white fw-bold py-5">
                             <div class="col-12 col-md-4 col-lg-3 order-md-3">
@@ -152,10 +152,10 @@
                     </div>
                 </div>
 
-                <div class="main_bottom">
+                <div class="main_bottom mx-3">
                     <div class="row">
-                        <div class="col-12 col-lg-8 gy-4">
-                            <div class="card">
+                        <div class="col-12 col-lg-8 g-4">
+                            <div class="card mb-3">
                                 <h1 class="card-header">Prossime classi</h1>
                                 <div class="card-body">
                                     <table class="table">
@@ -342,13 +342,13 @@
                                     </table>
                                 </div>
                             </div>
-                            <div class="card">
+                            <div class="card mb-3">
                                 <h1 class="card-header"> F.A.Q</h1>
-                                <div class="card-body">
+                                <div class="card-body ">
                                     <div class="accordion accordion-flush" id="accordionFlushExample">
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="flush-headingOne">
-                                                <button class="accordion-button collapsed" type="button"
+                                                <button class="accordion-button collapsed fw-bold" type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                                     aria-expanded="false" aria-controls="flush-collapseOne">
                                                     Come aggiungere un nuovo studente?
@@ -357,12 +357,16 @@
                                             <div id="flush-collapseOne" class="accordion-collapse collapse"
                                                 aria-labelledby="flush-headingOne"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum assumenda dolorem ad molestias exercitationem accusantium neque esse doloremque voluptatum atque, porro tempore totam sunt beatae commodi odio ut placeat nesciunt.></div>
+                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Harum assumenda dolorem ad molestias
+                                                    exercitationem accusantium neque esse doloremque voluptatum atque,
+                                                    porro tempore totam sunt beatae commodi odio ut placeat nesciunt.>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="flush-headingTwo">
-                                                <button class="accordion-button collapsed" type="button"
+                                                <button class="accordion-button collapsed fw-bold" type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
                                                     aria-expanded="false" aria-controls="flush-collapseTwo">
                                                     Come posso accedere alle informazioni del mio account?
@@ -371,12 +375,15 @@
                                             <div id="flush-collapseTwo" class="accordion-collapse collapse"
                                                 aria-labelledby="flush-headingTwo"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio dolore molestiae, animi aliquid officiis dicta nam quasi explicabo laudantium voluptatibus nostrum atque soluta adipisci dolorum, assumenda quas, vero aut veniam!</div>
+                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Odio dolore molestiae, animi aliquid officiis
+                                                    dicta nam quasi explicabo laudantium voluptatibus nostrum atque
+                                                    soluta adipisci dolorum, assumenda quas, vero aut veniam!</div>
                                             </div>
                                         </div>
                                         <div class="accordion-item">
                                             <h2 class="accordion-header" id="flush-headingThree">
-                                                <button class="accordion-button collapsed" type="button"
+                                                <button class="accordion-button collapsed fw-bold" type="button"
                                                     data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                                                     aria-expanded="false" aria-controls="flush-collapseThree">
                                                     Posso usare questa dashboard da mobile?
@@ -385,19 +392,46 @@
                                             <div id="flush-collapseThree" class="accordion-collapse collapse"
                                                 aria-labelledby="flush-headingThree"
                                                 data-bs-parent="#accordionFlushExample">
-                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum assumenda dolorem ad molestias exercitationem accusantium neque esse doloremque voluptatum atque, porro tempore totam sunt beatae commodi odio ut placeat nesciunt.></div>
+                                                <div class="accordion-body">Lorem ipsum dolor sit amet consectetur
+                                                    adipisicing elit. Harum assumenda dolorem ad molestias
+                                                    exercitationem accusantium neque esse doloremque voluptatum atque,
+                                                    porro tempore totam sunt beatae commodi odio ut placeat nesciunt.>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-4">
-                                <div class="card"></div>
-                                <div class="card"></div>
+                        </div>
+                        <div class="col-12 col-lg-4 g-4">
+                            <div class="card mb-3">
+                                <h1 class="card-header">Todo</h1>
+                                <div class="card-body">
+                                    <ul class="list-group fw-bold">
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
+                                            <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
+                                            <label class="form-check-label" for="secondCheckbox">Lezioni su Bootstrap 5 in classe #75</label>
+                                        </li>
+                                        <li class="list-group-item">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
+                                            <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card mb-3">
+                                <h1 class="card-header"></h1>
+                                <div class="card-body"></div>
                             </div>
                         </div>
                     </div>
                 </div>
+                
+            </div>
         </main>
     </div>
 
