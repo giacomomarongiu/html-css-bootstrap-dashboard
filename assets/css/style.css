@@ -2,7 +2,8 @@
 
 body {
     height: 100vh;
-    overflow: ;
+    overflow: hidden;
+    font-size: 'Roboto', sans-serif;;
 }
 
 #site_header {
@@ -14,14 +15,16 @@ body {
 }
 
 
-
 .wrapper {
     height: calc(100%-50px);
 }
 
 .sidebar {
-    min-width: 50px;
-    max-width: 120px;
+    max-width: 70px;
+}
+
+main{
+    overflow-y: scroll;
 }
 
 .img_20px{
@@ -40,6 +43,6 @@ body {
 
 @media screen and (min-width:992px) {
     .sidebar {
-        min-width: 90px;
+        min-width: 120px;
     }
 }
