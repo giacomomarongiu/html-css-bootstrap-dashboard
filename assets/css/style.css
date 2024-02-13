@@ -40,6 +40,13 @@ overflow-y: auto;
     border: 1px solid gray;
 }
 
+.my_w20{
+    width: 20%;
+}
+
+.my_w30{
+    width: 30%;
+}
 
 
 
