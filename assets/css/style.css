@@ -41,8 +41,14 @@ overflow-y: auto;
 }
 
 
+
+
 @media screen and (min-width:992px) {
     .sidebar {
         min-width: 120px;
+    }
+
+    .w_lg_40{
+        width: 40% !important;
     }
 }

@@ -13,16 +13,25 @@
 
 <body class="">
 
-    <div class="offcanvas offcanvas-end " data-bs-backdrop="static" tabindex="-1" id="add_students"
+    <div class="offcanvas offcanvas-end" data-bs-backdrop="static" tabindex="-1" id="add_students"
         aria-labelledby="staticBackdropLabel">
         <div class="offcanvas-header">
             <h5 class="offcanvas-title" id="staticBackdropLabel">
-                Offcanvas
+                Inserisci nuovo studente
             </h5>
             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <div>I will not close if you click outside of me.</div>
+            <div class="d-flex gap-2">
+                <div class="w-50">
+                    <label for="name" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="w-50">
+                    <label for="name" class="form-label">Cogome</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+            </div>
         </div>
     </div>
 
@@ -435,7 +444,7 @@
                                     <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese.</p>
                                 </div>
                                 <div class="card-body">
-                                    <ul class="list-group">
+                                    <ul class="list-group  list-group-flush">
                                         <li class="list-group-item">Gennaio: 1500</li>
                                         <li class="list-group-item">Febbraio: 600</li>
                                         <li class="list-group-item">Marzo: 1500</li>
