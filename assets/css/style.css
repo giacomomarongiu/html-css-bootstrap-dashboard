@@ -1,21 +1,32 @@
-:root {}
-
-.debug .debug #site_main {}
-
-
-.debug .main_right {
-
+body {
+    height: 100vh;
+    overflow: hidden;
 }
 
-.debug .main_left {
-
+header {
+    height: 50px;
 }
 
-.debug .main_r_top {
+#site_header img{
+    max-height: 45px;
+}
 
+main {
+    overflow: auto;
+}
+
+.wrapper {
+    height: calc(100%-50px);
+}
+
+.sidebar {
+    min-width: 50px;
 }
 
 
-#site_header .navbar {
-height: 50px;
+
+@media screen and (min-width:992px) {
+    .sidebar {
+        min-width: 90px;
+    }
 }
