@@ -22,7 +22,7 @@
                         <!-- logo for large screen -->
                         <img class="d-none d-md-block mw-100" src="./assets/img/logo.svg" />
                         <!-- logo for small screen -->
-                        <img class="d-md-none mw-100" src="./assets/img/mobile-logo.png" />
+                        <img class="d-none mw-100" src="./assets/img/mobile-logo.png" />
                     </div>
                 </div>
 
@@ -46,21 +46,36 @@
     <main>
         <div id="site_main" class="container-fluid p-0">
 
-            <div class="row h-100">
-
+            <div class="row">
                 <div class="main_left col-2 p-0">
-                    <div class="container-fluid h-100">
-                        <div class="row h-100">
-                            <div class="col">
-                                <ul class="d-flex list-unstyled flex-column h-100">
-                                    <li class=""> Uno</li>
-                                    <li class=""> Due</li>
-                                    <li class=""> Tre</li>
-                                    <li class="mt-auto"> Quattro</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                    <!--main left-->
+                    <ul class="list-unstyled text-white pt-4 d-flex flex-column h-100 align-items-center bg-dark">
+                        <li class="">
+                            <a class="text-white text-decoration-none">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="d-none d-lg-inline ps-1">Home</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="text-white text-decoration-none">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                <span class="d-none d-lg-inline ps-1">Stats</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a class="text-white text-decoration-none">
+                                <i class="fa-solid fa-signal"></i>
+                                <span class="d-none d-lg-inline ps-1">Signal</span>
+                            </a>
+                        </li>
+                        <li class="mt-auto">
+                            <a class="text-white text-decoration-none">
+                                <i class="fa-solid fa-gear"></i>
+                                <span class="d-none d-lg-inline ps-1">Admin</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <!--/main left-->
                 </div>
 
                 <div class="main_right overflow-y-auto col-10 p-0">
