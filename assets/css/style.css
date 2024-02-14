@@ -40,14 +40,6 @@ overflow-y: auto;
     border: 1px solid gray;
 }
 
-.my_w20{
-    width: 20%;
-}
-
-.my_w30{
-    width: 30%;
-}
-
 
 
 @media screen and (min-width:992px) {
@@ -55,7 +47,4 @@ overflow-y: auto;
         min-width: 120px;
     }
 
-    .w_lg_40{
-        width: 40% !important;
-    }
 }
