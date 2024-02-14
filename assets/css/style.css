@@ -1,19 +1,21 @@
-
-
 body {
     height: 100vh;
     overflow: hidden;
-    font-size: 'Roboto', sans-serif;;
+    font-size: 'Roboto', sans-serif;
+    ;
 }
 
 #site_header {
     height: 50px;
 }
 
-#site_header img{
+#site_header img {
     height: 50px;
 }
 
+.my_min {
+    width: 70px;
+}
 
 .wrapper {
     height: calc(100% - 50px);
@@ -23,15 +25,15 @@ body {
     max-width: 70px;
 }
 
-body #site_main{
-overflow-y: auto;
+body #site_main {
+    overflow-y: auto;
 }
 
-.img_20px{
+.img_20px {
     max-width: 30px;
 }
 
-.action_btn{
+.action_btn {
     all: unset;
     width: 30px;
     height: 30px;

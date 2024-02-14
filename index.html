@@ -90,15 +90,19 @@
 
     <header>
         <div id="site_header" class="container-fluid h-100 p-0">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light align-items-center h-100 p-0">
-                <div class="col-2 text-center">
-                    <div class="navbar-brand p-1">
-                        <img class="d-none d-md-block mw-100" src="./assets/img/logo.svg" alt="">
-                        <img class="d-md-none mw-100" src="./assets/img/mobile-logo.png" alt="">
+            <nav
+                class="navbar navbar-expand-lg navbar-light bg-light align-items-center h-100 p-0 justify-content-evenly">
+                <div class="col-2 text-center p-1 my_min">
+                    <div class="navbar-brand  text-center">
+                        <img class="d-none d-md-block" src="./assets/img/logo.svg" alt="">
+                        <img class="d-md-none" src="./assets/img/mobile-logo.png" alt="">
                     </div>
                 </div>
 
-                <div class="col-8">
+                <div class="col-8 d-flex p-2">
+                    <span class="input-group-text p-2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </span>
                     <input class="form-control" type="search" placeholder="Prova a cercaree" aria-label="Search">
                 </div>
 
@@ -107,7 +111,19 @@
                         <li class="d-none d-lg-block"><i class="fa-solid fa-list-ul"></i></li>
                         <li class="d-none d-lg-block"> <i class="fa-solid fa-circle-question"></i></li>
                         <li class="d-none d-lg-block"> <i class="fa-solid fa-ellipsis-vertical"></i></li>
-                        <li class="text-warning"> <i class="fa-solid fa-bell"></i></li>
+                        <li class="">
+                            <div class="btn-group dropstart">
+                                <button type="button" class="btn btn-secondary bg-light border-0"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-bell text-warning"></i>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </nav>
