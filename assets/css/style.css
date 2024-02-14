@@ -5,31 +5,32 @@ body {
     ;
 }
 
+body #site_main {
+    overflow-y: auto; /*overflow only on main*/
+}
+
 
 
 #site_header img {
     height: 70px;
 }
 
-
 .wrapper {
-    height: calc(100% - 50px);
+    height: calc(100% - 70px);    /*wrapper dimensions*/
 }
+
 
 
 .sidebar {
-    max-width: 70px;
+    max-width: 70px;  /*first size of sidebar*/
 }
 .sidebar >ul >li:hover{
-    background-color: black;
+    background-color: black;  /*change bg oh hover*/
 }
 
 
-body #site_main {
-    overflow-y: auto;
-}
-
-.img_20px {
+/*Utilities for "Prossime classi" TAB*/
+.img_30px {
     max-width: 30px;
 }
 
@@ -44,6 +45,10 @@ body #site_main {
 
 
 
+
+
+
+/*media query*/
 @media screen and (min-width:992px) {
     .sidebar {
         min-width: 140px;
