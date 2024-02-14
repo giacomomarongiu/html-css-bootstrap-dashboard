@@ -5,25 +5,26 @@ body {
     ;
 }
 
-#site_header {
-    height: 50px;
-}
+
 
 #site_header img {
-    height: 50px;
+    height: 70px;
 }
 
-.my_min {
-    width: 70px;
-}
 
 .wrapper {
     height: calc(100% - 50px);
 }
 
+
 .sidebar {
     max-width: 70px;
 }
+
+.sidebar >ul >li:hover{
+    background-color: black;
+}
+
 
 body #site_main {
     overflow-y: auto;
@@ -46,7 +47,10 @@ body #site_main {
 
 @media screen and (min-width:992px) {
     .sidebar {
-        min-width: 120px;
+        min-width: 140px;
     }
 
+    #site_header img {
+        width: 140px;
+    }
 }
