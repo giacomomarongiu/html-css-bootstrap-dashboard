@@ -53,4 +53,8 @@ body #site_main {
         width: 130px;
         padding-left: 10px;
     }
+
+    .w_lg_50{
+        max-width: 50%!important;
+    }
 }
